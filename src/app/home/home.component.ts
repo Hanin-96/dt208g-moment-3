@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  heartImg: string = "assets/img/heart.jpg";
 
 }

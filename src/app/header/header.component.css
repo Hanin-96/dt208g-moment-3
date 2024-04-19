@@ -1,3 +1,42 @@
+
+header h1 {
+    text-align: center;
+    font-size: 4.2rem;
+}
+
+nav {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1f1f1f;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #005251;
+    box-shadow: 5px 5px 1px #adadad;
+    color: #ffffff;
+}
+
 .active {
-    background-color: cadetblue;
+    background-color: #005251 !important;
+    box-shadow: 5px 5px 1px #adadad;
+    color: #ffffff !important;
 }
