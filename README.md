@@ -14,7 +14,7 @@ Angular projektet skapades i en mapp, där varje webbsida är skapad som kompone
 På startsidan är fotot kopplat med en property bindning där url:en är definerad i klassen HomeComponent. På så sätt kan fotot uppdateras och ändras dynamiskt.
 <br>
 
-Sidan Konvertering innehåller fyra input fält som är kopplade med Two-way Data Bindning <em>[(ngModel)]</em>. Det betyder att inputen är bundna till variabler som defineras i komponenten CalculateComponent. Dessutom har <em>(ngModelChange)</em> lagts till på inputen för att fånga när värden i input fälten ändras. På så sätt kan värden konverteras dynamiskt och visas direkt på input fälten bredvid. Följande källa har använts för metoden: [https://ultimatecourses.com/blog/difference-change-ngmodelchange-angular]
+Sidan Konvertering innehåller fyra input fält som är kopplade med Two-way Data Bindning <em>[(ngModel)]</em>. Det betyder att inputen är bundna till variabler som defineras i komponenten CalculateComponent. Dessutom har <em>(ngModelChange)</em> lagts till på inputen för att fånga när värden i input fälten ändras. På så sätt kan värden konverteras dynamiskt och visas direkt på input fälten bredvid. Följande källa har använts för metoden: [External link](https://ultimatecourses.com/blog/difference-change-ngmodelchange-angular)
 
 ### Komponenter
 
