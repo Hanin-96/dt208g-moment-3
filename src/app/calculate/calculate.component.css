@@ -32,3 +32,17 @@ input {
     font-size: 2.4rem;
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 450px) {
+    .temp-container, .distance-container {
+        flex-direction: column;
+    }
+
+    .celcius, .fahrenheit, .meter, .feet {
+        width: 100%;
+    }
+
+    .fa-arrows-left-right {
+        display: none;
+    }
+}

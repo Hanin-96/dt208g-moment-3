@@ -1,0 +1,7 @@
+ul {
+    list-style: none;
+    max-width: fit-content;
+    width: 100%;
+    margin: 35rem auto 0 auto;
+}
+

@@ -27,6 +27,7 @@ nav ul li a {
     color: #1f1f1f;
     padding: 1rem;
     background-color: #ffffff;
+    transition: ease-in-out 0.3s;
 }
 
 nav ul li a:hover {
@@ -40,3 +41,17 @@ nav ul li a:hover {
     box-shadow: 5px 5px 1px #adadad;
     color: #ffffff !important;
 }
+
+@media screen and (max-width: 450px) {
+    nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul li a{
+        width: 100%;
+        display: block;
+    }
+}
+
+
