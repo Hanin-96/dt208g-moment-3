@@ -1,5 +1,26 @@
 <h2>Konvertering av enheter</h2>
 
 <div class="calc-wrap">
-    
+    <div class="temp-container">
+        <div class="celcius">
+            <label for="temp-cel">Celcius &#8451;</label>
+            <input type="number" id="temp-cel" [(ngModel)]="tempCel" (ngModelChange)="onChangeTempCel($event)">
+        </div>
+
+        <div class="fahrenheit">
+            <label for="temp-fah">Fahrenheit &#8457;</label>
+            <input type="number" id="temp-fah" [(ngModel)]="tempFah" (ngModelChange)="onChangeTempFah($event)">
+        </div>
+    </div>
+
+    <div class="distance-container">
+        <div class="meter">
+            <label for="dis-meter">Meter m</label>
+            <input type="number" id="dis-meter">
+        </div>
+        <div class="feet">
+            <label for="dis-feet">Feet ft</label>
+            <input type="number" id="dis-feet">
+        </div>
+    </div>
 </div>
