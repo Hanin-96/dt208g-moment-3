@@ -1,27 +1,21 @@
-# Moment3
+# Moment-3
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+Projektet i Moment 3 är skapad i Angular.
 
-## Development server
+## Länk till webbplats
+[https://genuine-unicorn-a105f6.netlify.app/]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Innehåll
 
-## Code scaffolding
+Angular projektet skapades i en mapp, där varje webbsida är skapad som komponenter via kommandot: <em>ng generate component "Namn på komponent"</em>.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Bindning
 
-## Build
+På startsidan är fotot kopplat med en property bindning där url:en är definerad i klassen HomeComponent. På så sätt kan fotot uppdateras och ändras dynamiskt.
+<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Sidan Konvertering innehåller fyra input fält som är kopplade med Two-way Data Bindning <em>[(ngModel)]</em>. Det betyder att inputen är bundna till variabler som defineras i komponenten CalculateComponent. Dessutom har <em>(ngModelChange)</em> lagts till på inputen för att fånga när värden i input fälten ändras. På så sätt kan värden konverteras dynamiskt och visas direkt på input fälten bredvid. Följande källa har använts för metoden: [External link](https://ultimatecourses.com/blog/difference-change-ngmodelchange-angular)
 
-## Running unit tests
+### Komponenter
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Både Header och Footer är komponenter som används på alla webbplatsens sidor. Navigationslänkarna i headern använder RouterLink, detta för att hindra omladdning av sidor och tillåter att endast innehållet uppdateras dynamiskt.</p>
