@@ -12,18 +12,38 @@ export class CalculateComponent {
 
   tempCel: number = 0;
   tempFah: number = 32;
+  disFeet: number = 0;
+  disMeter: number = 0;
 
   onChangeTempCel(temp: number): void {
-    console.log(temp);
     if (temp != null) {
       this.tempFah = (temp * 1.8) + 32;
+    } else {
+      this.tempFah = 0;
     }
   }
 
   onChangeTempFah(temp: number): void {
     if (temp != null) {
-      this.tempCel = (temp -32) * (5/9);
+      this.tempCel = (temp - 32) * (5 / 9);
+    } else {
+      this.tempCel = 0;
     }
   }
 
+  onChangeFeet(distance: number): void {
+    if (distance != null) {
+      this.disMeter = distance * 3.28;
+    } else {
+      this.disMeter = 0;
+    }
+  }
+
+  onChangeMeter(distance: number): void {
+    if (distance != null) {
+      this.disFeet = distance / 3.28;
+    } else {
+      this.disFeet = 0;
+    }
+  }
 }

@@ -7,6 +7,8 @@
             <input type="number" id="temp-cel" [(ngModel)]="tempCel" (ngModelChange)="onChangeTempCel($event)">
         </div>
 
+        <i class="fa-solid fa-arrows-left-right"></i>
+
         <div class="fahrenheit">
             <label for="temp-fah">Fahrenheit &#8457;</label>
             <input type="number" id="temp-fah" [(ngModel)]="tempFah" (ngModelChange)="onChangeTempFah($event)">
@@ -16,11 +18,14 @@
     <div class="distance-container">
         <div class="meter">
             <label for="dis-meter">Meter m</label>
-            <input type="number" id="dis-meter">
+            <input type="number" id="dis-meter" [(ngModel)]="disMeter" (ngModelChange)="onChangeMeter($event)">
         </div>
+
+        <i class="fa-solid fa-arrows-left-right"></i>
+
         <div class="feet">
             <label for="dis-feet">Feet ft</label>
-            <input type="number" id="dis-feet">
+            <input type="number" id="dis-feet" [(ngModel)]="disFeet" (ngModelChange)="onChangeFeet($event)">
         </div>
     </div>
 </div>
