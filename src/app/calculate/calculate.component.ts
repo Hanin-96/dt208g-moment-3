@@ -33,7 +33,7 @@ export class CalculateComponent {
 
   onChangeFeet(distance: number): void {
     if (distance != null) {
-      this.disMeter = distance * 3.28;
+      this.disMeter = distance / 3.28;
     } else {
       this.disMeter = 0;
     }
@@ -41,7 +41,7 @@ export class CalculateComponent {
 
   onChangeMeter(distance: number): void {
     if (distance != null) {
-      this.disFeet = distance / 3.28;
+      this.disFeet = distance * 3.28;
     } else {
       this.disFeet = 0;
     }
