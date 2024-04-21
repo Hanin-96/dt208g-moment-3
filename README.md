@@ -1,4 +1,4 @@
-# Moment3
+# Moment-3
 
 Projektet i Moment 3 är skapad i Angular.
 
